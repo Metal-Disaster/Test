@@ -144,14 +144,6 @@ Tab:CreateButton({
 })
 
 Tab:CreateButton({
-    Name = "No CoolDown EggMan",  -- Texto que aparece en el botÃƒÂ³n
-    Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/iekeeURTab:CreateButton({
-d"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
-    end,
-})
-
-Tab:CreateButton({
     Name = "No CoolDown Bendy",  -- Texto que aparece en el botÃƒÂ³n
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/u3zYqXNW"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
