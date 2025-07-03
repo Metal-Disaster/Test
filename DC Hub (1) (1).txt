@@ -116,16 +116,16 @@ Tab:CreateButton({
 })
 
 Tab:CreateButton({
-    Name = "No CoolDown Test",  -- Texto que aparece en el botÃƒÂ³n
+    Name = "No CoolDown Cream",
     Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/sMeSDW7s"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+        loadstring(game:HttpGet("https://pastebin.com/raw/nfJH6LDp"))()
     end,
 })
 
 Tab:CreateButton({
-    Name = "No CoolDown Test2",  -- Texto que aparece en el botÃƒÂ³n
+    Name = "No CoolDown Test",  -- Texto que aparece en el botÃƒÂ³n
     Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/nfJH6LDp"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+        loadstring(game:HttpGet("https://pastebin.com/raw/sMeSDW7s"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
     end,
 })
 
@@ -146,7 +146,13 @@ Tab:CreateButton({
 Tab:CreateButton({
     Name = "No CoolDown EggMan",  -- Texto que aparece en el botÃƒÂ³n
     Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/iekeeURd"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+        loadstring(game:HttpGet("https://pastebin.com/raw/iekeeURTab:CreateButton({
+    Name = "No CoolDown Cream",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/nfJH6LDp"))()
+    end,
+})
+d"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
     end,
 })
 
