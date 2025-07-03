@@ -1,0 +1,535 @@
+-- Ã°Å¸â€œÂ¦ Cargar Rayfield UI Library
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+-- Ã°Å¸Å½Â® Crear la ventana principal del menÃƒÂº
+local Window = Rayfield:CreateWindow({
+    Name = "Test Hub | By Metal_Disaster",
+    LoadingTitle = "Test Hub",
+    LoadingSubtitle = "by Metal_Disaster",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "ProtectedHubData", -- opcional
+        FileName = "Config"
+    },
+    Discord = {
+        Enabled = false
+    },
+    KeySystem = false
+})
+
+local Tab = Window:CreateTab("Main", 4483362458) -- Icono opcional (ID de imagen de Roblox)
+
+Tab:CreateParagraph({
+    Title = "Nota / Note",
+    Content = "Debes ejecutar únicamente los botones con los nombres de los personajes que indican porque de otro modo puede tener errores o puedes saber que usas exploits / You should only run with the buttons with the character names indicated because otherwise you may have errors or you may know that you use exploits"
+})
+
+Tab:CreateButton({
+   Name = "Esp (All Players)",
+   CurrentValue = false,
+   Callback = function(Value)
+      loadstring(game:HttpGet("https://pastebin.com/raw/HsArk6W9"))()
+   end,
+})
+
+Tab:CreateButton({
+    Name = "Big Hitbox (For Chara)",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+
+-- Extensiones para modificar hitboxes de todos los jugadores
+local hitboxModule = workspace:WaitForChild("gameInstance"):WaitForChild("hitBoxModule")
+local playersFolder = hitboxModule:WaitForChild("Players")
+
+for _, playerInFolder in ipairs(playersFolder:GetChildren()) do
+    local hitFolder = playerInFolder:FindFirstChild("HitFolder")
+    if hitFolder then
+        local collision = hitFolder:FindFirstChild("collision")
+        if collision then
+            collision.Size = Vector3.new(10, 15, 10)
+        end
+    end
+end
+    end,
+})
+
+Tab:CreateButton({
+    Name = "Big Hitbox (For Exe)",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+
+-- Extensiones para modificar hitboxes de todos los jugadores
+local hitboxModule = workspace:WaitForChild("gameInstance"):WaitForChild("hitBoxModule")
+local playersFolder = hitboxModule:WaitForChild("Players")
+
+for _, playerInFolder in ipairs(playersFolder:GetChildren()) do
+    local hitFolder = playerInFolder:FindFirstChild("HitFolder")
+    if hitFolder then
+        local collision = hitFolder:FindFirstChild("collision")
+        if collision then
+            collision.Size = Vector3.new(20, 15, 20)
+        end
+    end
+end
+    end,
+})
+
+Tab:CreateButton({
+    Name = "Big Hitbox (For Survivor)",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+
+-- Extensiones para modificar hitboxes de todos los jugadores
+local hitboxModule = workspace:WaitForChild("gameInstance"):WaitForChild("hitBoxModule")
+local playersFolder = hitboxModule:WaitForChild("Players")
+
+for _, playerInFolder in ipairs(playersFolder:GetChildren()) do
+    local hitFolder = playerInFolder:FindFirstChild("HitFolder")
+    if hitFolder then
+        local collision = hitFolder:FindFirstChild("collision")
+        if collision then
+            collision.Size = Vector3.new(30, 10, 30)
+        end
+    end
+end
+    end,
+})
+
+local Tab = Window:CreateTab("No CoolDowns", 4483362458) -- Icono opcional (ID de imagen de Roblox)
+
+Tab:CreateParagraph({
+    Title = "Nota / Note",
+    Content = "Debes ejecutar únicamente los botones con los nombres de los personajes que indican porque de otro modo no funcionaran / You should only execute the buttons with the names of the characters indicated because otherwise they will not work"
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Sonic",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/sMeSDW7s"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Cream",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/nfJH6LDp"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Vanilla",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/q1xGja4d"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown EggMan",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/iekeeURd"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Bendy",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/u3zYqXNW"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Boris",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ngUxgmdT"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Cuphead",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ddhJhLYM"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown MugMan",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Pu9fuEZ4"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Monika",  -- Texto que aparece en el botÃƒÂ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/RjzCeiap"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Sayori",  -- Texto que aparece en el botÃ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/3g23fs8Z"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Sans",  -- Texto que aparece en el botÃ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/g9XXN86J"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+Tab:CreateButton({
+    Name = "No CoolDown Frisk",  -- Texto que aparece en el botÃ³n
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Metal-Disaster/Sans/refs/heads/main/frisk.txt"))()-- AquÃƒÂ­ va el cÃƒÂ³digo que se ejecutarÃƒÂ¡ al presionar el botÃƒÂ³n-- Ejemplo: Aumentar salto
+    end,
+})
+
+local Tab = Window:CreateTab("Extra", 4483362458)
+
+Tab:CreateParagraph({
+    Title = "Advertencia / Warning",
+    Content = "Cuando uses el Fov, primero debes elegir la cantidad de fov y luego presionarle en Lock Fov porque de otra manera el juego se crasheara, si quieres cambiar el fov despues, debes desactivar Lock Fov y volver a configurar el fov porque si no igual crashea / When you use the Fov, you must first choose the amount of fov and then press Lock Fov because otherwise the game will crash, if you want to change the fov after, you must disable Lock Fov and reconfigure the FOV because otherwise it might crash"
+})
+
+-- Variables
+local FovValue = 70  -- Valor inicial del FOV
+local FovLocked = false  -- Estado del bloqueo
+local IsAdjustingSlider = false  -- Indicador para saber si el deslizador está siendo ajustado
+local OriginalFov = nil  -- Variable para almacenar el FOV original
+local PropertyChangedConnection = nil  -- Conexión del evento GetPropertyChangedSignal
+
+-- Crear deslizador FOV
+local Slider = Tab:CreateSlider({
+    Name = "Fov",
+    Range = {1, 120},
+    Increment = 1,
+    Suffix = " FOV",
+    CurrentValue = FovValue,
+    Callback = function(Value)
+        FovValue = Value
+        IsAdjustingSlider = true  -- Marcamos que se está ajustando el deslizador
+
+        -- Si no está bloqueado, simplemente actualizamos el FOV
+        if not FovLocked and workspace.CurrentCamera then
+            workspace.CurrentCamera.FieldOfView = FovValue
+        end
+
+        -- Desmarcar cuando termine de ajustar el deslizador
+        task.wait(0.1)  -- Tiempo de espera para asegurar que el ajuste terminó
+        IsAdjustingSlider = false
+    end,
+})
+
+-- Crear toggle Lock FOV
+local Toggle = Tab:CreateToggle({
+    Name = "Lock Fov",
+    CurrentValue = false,
+    Callback = function(Value)
+        FovLocked = Value
+
+        if FovLocked and workspace.CurrentCamera then
+            -- Aplicamos el FOV y lo bloqueamos permanentemente
+            workspace.CurrentCamera.FieldOfView = FovValue
+
+            -- Aquí desactivamos cualquier intento de cambiar el FOV
+            OriginalFov = workspace.CurrentCamera.FieldOfView
+            -- El valor nunca cambiará mientras esté bloqueado, aunque se modifique el slider
+            if PropertyChangedConnection then
+                PropertyChangedConnection:Disconnect()  -- Desconectar evento previo si existe
+            end
+            PropertyChangedConnection = workspace.CurrentCamera:GetPropertyChangedSignal("FieldOfView"):Connect(function()
+                if FovLocked then
+                    workspace.CurrentCamera.FieldOfView = OriginalFov
+                end
+            end)
+
+        else
+            -- Si se desbloquea el FOV, eliminamos la protección
+            if PropertyChangedConnection then
+                PropertyChangedConnection:Disconnect()  -- Desconectar el evento si se desbloquea
+                PropertyChangedConnection = nil
+            end
+        end
+    end,
+})
+
+-- Bucle constante para asegurarnos de que el FOV no cambie nunca
+task.spawn(function()
+    while true do
+        task.wait(0.1)  -- Revisa cada 0.1 segundos
+
+        if FovLocked and workspace.CurrentCamera then
+            -- Evitamos interferir con el deslizador mientras se ajusta
+            if not IsAdjustingSlider then
+                workspace.CurrentCamera.FieldOfView = FovValue
+            end
+        end
+    end
+end)
+
+-- Protección adicional para que el FOV no cambie si la cámara es reiniciada
+workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+    if FovLocked and workspace.CurrentCamera then
+        workspace.CurrentCamera.FieldOfView = FovValue
+    end
+end)
+
+-- === BOTÓN: Infinite Yield ===
+Tab:CreateButton({
+    Name = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end,
+})
+
+local lighting = game:GetService("Lighting")
+
+local originalSettings = {}
+local originalEffects = {}
+local shaderLoopRunning = false
+local shaderLoopThread = nil
+
+-- Guarda configuración original
+local function backupOriginalLighting()
+    originalSettings = {
+        Ambient = lighting.Ambient,
+        OutdoorAmbient = lighting.OutdoorAmbient,
+        Brightness = lighting.Brightness,
+        GlobalShadows = lighting.GlobalShadows,
+        EnvironmentDiffuseScale = lighting.EnvironmentDiffuseScale,
+        EnvironmentSpecularScale = lighting.EnvironmentSpecularScale,
+        Technology = lighting.Technology,
+    }
+
+    originalEffects = {}
+    for _, effect in pairs(lighting:GetChildren()) do
+        if effect:IsA("PostEffect") and not effect.Name:match("^Shader_") then
+            table.insert(originalEffects, effect:Clone())
+        end
+    end
+end
+
+-- Aplica efectos personalizados en bucle
+local function applyShaderLoop()
+    while shaderLoopRunning do
+        for _, v in pairs(lighting:GetChildren()) do
+            if v:IsA("PostEffect") and not v.Name:match("^Shader_") then
+                v.Enabled = false
+            end
+        end
+
+        lighting.Technology = Enum.Technology.Future
+        lighting.Ambient = Color3.fromRGB(150, 150, 150)
+        lighting.OutdoorAmbient = Color3.fromRGB(120, 120, 120)
+        lighting.Brightness = 1
+        lighting.GlobalShadows = true
+        lighting.EnvironmentDiffuseScale = 1.5
+        lighting.EnvironmentSpecularScale = 1.5
+
+        local function createOrUpdate(className, name, props)
+            local fx = lighting:FindFirstChild(name)
+            if not fx then
+                fx = Instance.new(className)
+                fx.Name = name
+                fx.Parent = lighting
+            end
+            for prop, val in pairs(props) do
+                fx[prop] = val
+            end
+        end
+
+        createOrUpdate("BloomEffect", "Shader_Bloom", {
+            Intensity = 0.5,
+            Size = 24,
+            Threshold = 1
+        })
+
+        createOrUpdate("BlurEffect", "Shader_Blur", {
+            Size = 2
+        })
+
+        createOrUpdate("ColorCorrectionEffect", "Shader_CC", {
+            Brightness = 0.1,
+            Contrast = 0.2,
+            Saturation = 0.15
+        })
+
+        createOrUpdate("SunRaysEffect", "Shader_SunRays", {
+            Intensity = 0.15,
+            Spread = 1
+        })
+
+        createOrUpdate("DepthOfFieldEffect", "Shader_DOF", {
+            FarIntensity = 0.08,
+            FocusDistance = 50,
+            NearIntensity = 0.1
+        })
+
+        task.wait(1)
+    end
+end
+
+-- Restaura configuración original
+local function restoreOriginalLighting()
+    for prop, val in pairs(originalSettings) do
+        lighting[prop] = val
+    end
+
+    for _, v in pairs(lighting:GetChildren()) do
+        if v:IsA("PostEffect") and v.Name:match("^Shader_") then
+            v:Destroy()
+        end
+    end
+
+    for _, effect in pairs(originalEffects) do
+        local restored = effect:Clone()
+        restored.Parent = lighting
+    end
+end
+
+-- 🔘 INSÉRTALO en tu propia Tab:
+Tab:CreateToggle({
+    Name = "Shaders (NaturaltIdiot)",
+    CurrentValue = false,
+    Flag = "ShaderToggle",
+    Callback = function(state)
+        if state then
+            backupOriginalLighting()
+            shaderLoopRunning = true
+            shaderLoopThread = task.spawn(applyShaderLoop)
+            print("✅ Shaders activados")
+        else
+            shaderLoopRunning = false
+            task.wait(0.2)
+            restoreOriginalLighting()
+            print("❌ Shaders desactivados")
+        end
+    end
+})
+
+local originalVolumes = {
+    current = nil,
+    chaseTheme = nil,
+    menu = nil,
+    selection = nil,
+}
+
+local noMusicEnabled = false
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local player = Players.LocalPlayer
+
+local heartbeatConnection = nil
+local volumeChangedConnections = {}
+
+local function forceMuteSound(sound, originalVolumesTable, key)
+    if not sound or not sound:IsA("Sound") then return end
+
+    if not originalVolumesTable[key] then
+        originalVolumesTable[key] = sound.Volume
+    end
+
+    sound.Volume = 0
+
+    if volumeChangedConnections[key] then
+        volumeChangedConnections[key]:Disconnect()
+    end
+    volumeChangedConnections[key] = sound:GetPropertyChangedSignal("Volume"):Connect(function()
+        if noMusicEnabled and sound.Volume ~= 0 then
+            sound.Volume = 0
+        end
+    end)
+end
+
+local function restoreSound(sound, originalVolumesTable, key)
+    if not sound or not sound:IsA("Sound") then return end
+
+    if originalVolumesTable[key] then
+        sound.Volume = originalVolumesTable[key]
+    end
+
+    if volumeChangedConnections[key] then
+        volumeChangedConnections[key]:Disconnect()
+        volumeChangedConnections[key] = nil
+    end
+end
+
+local function constantlyMute()
+    if heartbeatConnection then
+        heartbeatConnection:Disconnect()
+        heartbeatConnection = nil
+    end
+
+    heartbeatConnection = RunService.Heartbeat:Connect(function()
+        if not noMusicEnabled then return end
+
+        -- current
+        local playerGui = player:FindFirstChild("PlayerGui")
+        local soundtracks = playerGui and playerGui:FindFirstChild("soundtracks")
+        local currentSound = soundtracks and soundtracks:FindFirstChild("current")
+        forceMuteSound(currentSound, originalVolumes, "current")
+
+        -- chaseTheme
+        local mainGui = playerGui and playerGui:FindFirstChild("maingui")
+        local moduleStarter = mainGui and mainGui:FindFirstChild("ModuleStarter")
+        local chaseHandler = moduleStarter and moduleStarter:FindFirstChild("ChaseHandler")
+        local chaseTheme = chaseHandler and chaseHandler:FindFirstChild("ChaseTheme")
+        forceMuteSound(chaseTheme, originalVolumes, "chaseTheme")
+
+        -- Menu (en StarterGui)
+        local menuSound = StarterGui:FindFirstChild("soundtracks") and StarterGui.soundtracks:FindFirstChild("Menu")
+        forceMuteSound(menuSound, originalVolumes, "menu")
+
+        -- selection (en StarterGui)
+        local selectionSound = StarterGui:FindFirstChild("soundtracks") and StarterGui.soundtracks:FindFirstChild("selection")
+        forceMuteSound(selectionSound, originalVolumes, "selection")
+    end)
+end
+
+-- Inicia el muteo continuo
+constantlyMute()
+
+-- Toggle Rayfield
+Tab:CreateToggle({
+    Name = "No Music",
+    CurrentValue = false,
+    Callback = function(Value)
+        noMusicEnabled = Value
+
+        -- current
+        local playerGui = player:FindFirstChild("PlayerGui")
+        local soundtracks = playerGui and playerGui:FindFirstChild("soundtracks")
+        local currentSound = soundtracks and soundtracks:FindFirstChild("current")
+
+        -- chaseTheme
+        local mainGui = playerGui and playerGui:FindFirstChild("maingui")
+        local moduleStarter = mainGui and mainGui:FindFirstChild("ModuleStarter")
+        local chaseHandler = moduleStarter and moduleStarter:FindFirstChild("ChaseHandler")
+        local chaseTheme = chaseHandler and chaseHandler:FindFirstChild("ChaseTheme")
+
+        -- menu y selection desde StarterGui
+        local menuSound = StarterGui:FindFirstChild("soundtracks") and StarterGui.soundtracks:FindFirstChild("Menu")
+        local selectionSound = StarterGui:FindFirstChild("soundtracks") and StarterGui.soundtracks:FindFirstChild("selection")
+
+        if not Value then
+            restoreSound(currentSound, originalVolumes, "current")
+            restoreSound(chaseTheme, originalVolumes, "chaseTheme")
+            restoreSound(menuSound, originalVolumes, "menu")
+            restoreSound(selectionSound, originalVolumes, "selection")
+        else
+            forceMuteSound(currentSound, originalVolumes, "current")
+            forceMuteSound(chaseTheme, originalVolumes, "chaseTheme")
+            forceMuteSound(menuSound, originalVolumes, "menu")
+            forceMuteSound(selectionSound, originalVolumes, "selection")
+        end
+    end,
+})
